@@ -14,7 +14,7 @@ import statsmodels.tsa.api as smt
 from statsmodels.tsa.arima_model import ARIMA
 from datetime import datetime
 
-Vehicle1 = pd.read_csv("OIL-SEP.csv", parse_dates=[0],index_col=0)
+Vehicle1 = pd.read_csv("AUDUSD.csv", parse_dates=[0],index_col=0)
 #date = elec['Date']
 #elec = elec.iloc[::-1]
 data= Vehicle1['Price'][-36:]
