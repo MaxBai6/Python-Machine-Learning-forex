@@ -1,6 +1,5 @@
 
-这部分分为数据预处理和正则方法预测两部分；
-数据预处理之后又把数据变为百分比形式，由于很简单，就用excel顺便做了；
-正则方法，线性回归的模型已建立并完成，但单从R square看不出实用性，估计很差，还有过拟合的问题；
-明天有事，周末改过拟合的问题；
-另外周末再把逻辑回归写一写，突然产生一个惊人的idea，可能要写很久。
+In this part, I use excel deal the draw data and then pridict by some linear methods. the result is obviously terrible. the new methods should be created.
+
+首先我用excel稍微处理了一下MT4数据，将上升下降改为百分比形式，然后用线性方法OLS，Lasso，Ridge稍稍预测了一下，结果很糟，外汇数据明显非线性。
+
