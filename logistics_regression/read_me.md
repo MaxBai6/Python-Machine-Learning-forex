@@ -1,14 +1,5 @@
-逻辑回归的系统，由于直接预测涨幅/跌幅用处误差极大，所以本项目用了另一种思路
-将涨跌幅度分为 （测试结果不错，代码就删了，有人感兴趣可以来互相讨论）
-假设一周的涨跌幅在其中波动，基于此计算最佳赢利点和止损点策略
-最后输出结果：一套最佳策略
-             期望的收益
 
-此外，要测试此系统的效应，需要用1-step ahead（应该叫一步提前预测测试吧）来预测，耗时肯定很长，下周或小假期再做。
+English: data are got from MT4. the main theory of the code is search samilar 30 weeks graph in history to predict recent hisghest price or lowest price. if last 30 weeks price graph is similar with graphs in histry, the trend may be samilar after the period. 
 
-另外就是其他两个学习方法SVM，二叉树了。由于数据预处理，模型架构都已完成，python也有SVM，二叉树的包，实现比较容易。
-笔者会在这周周末试试
+Chinese:其中数据来自MT4，算法的主要思想就是用下一周前30周的开盘，收盘，最高价格，最低价格，上升比例，下降比例这些数据做逻辑回归。并用将近15年的数据做训练，倘若下周之前三十周的数据与之前类似，那么人心的历史重演下周的波动有可能也与之前类似，从而预测下周的最高价。
 
-（其实最烦的还是测试，太烧电脑了）
-
-之后做SVM，分叉树
